@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_ui/presentation/component/custometext.dart';
+import 'package:project_ui/home/presentation/component/custometext.dart';
 
 class photoprofile extends StatelessWidget {
   const photoprofile({super.key});

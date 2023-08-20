@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_ui/presentation/Screen/homebody.dart';
+import 'package:project_ui/home/presentation/Screen/homebody.dart';
+import 'package:project_ui/page1/presentation/Screen/page.dart';
 
 void main(){
   runApp(MyApp());

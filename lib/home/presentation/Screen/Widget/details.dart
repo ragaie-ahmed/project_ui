@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_ui/presentation/component/customebutton.dart';
-import 'package:project_ui/presentation/component/custometext.dart';
+import 'package:project_ui/home/presentation/component/customebutton.dart';
+import 'package:project_ui/home/presentation/component/custometext.dart';
 
 class details extends StatelessWidget {
   const details({super.key});

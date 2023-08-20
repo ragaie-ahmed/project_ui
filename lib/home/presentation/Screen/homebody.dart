@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:project_ui/presentation/Screen/Widget/appbar.dart';
-import 'package:project_ui/presentation/Screen/Widget/bottombar.dart';
-import 'package:project_ui/presentation/Screen/Widget/card.dart';
-import 'package:project_ui/presentation/Screen/Widget/containerprofile.dart';
-import 'package:project_ui/presentation/Screen/Widget/details.dart';
-import 'package:project_ui/presentation/Screen/Widget/photoprofile.dart';
-import 'package:project_ui/presentation/component/custometext.dart';
+import 'package:project_ui/home/presentation/Screen/Widget/appbar.dart';
+import 'package:project_ui/home/presentation/Screen/Widget/bottombar.dart';
+import 'package:project_ui/home/presentation/Screen/Widget/card.dart';
+import 'package:project_ui/home/presentation/Screen/Widget/containerprofile.dart';
+import 'package:project_ui/home/presentation/Screen/Widget/details.dart';
+import 'package:project_ui/home/presentation/Screen/Widget/photoprofile.dart';
+import 'package:project_ui/home/presentation/component/custometext.dart';
 
 class homepage extends StatelessWidget {
   const homepage({super.key});
