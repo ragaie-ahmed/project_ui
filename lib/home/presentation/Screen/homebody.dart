@@ -5,7 +5,7 @@ import 'package:project_ui/home/presentation/Screen/Widget/card.dart';
 import 'package:project_ui/home/presentation/Screen/Widget/containerprofile.dart';
 import 'package:project_ui/home/presentation/Screen/Widget/details.dart';
 import 'package:project_ui/home/presentation/Screen/Widget/photoprofile.dart';
-import 'package:project_ui/home/presentation/component/custometext.dart';
+import 'package:project_ui/component/custometext.dart';
 
 class homepage extends StatelessWidget {
   const homepage({super.key});

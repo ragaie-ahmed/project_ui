@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_ui/home/presentation/component/custometext.dart';
+import 'package:project_ui/component/custometext.dart';
 
 class card extends StatelessWidget {
   card(

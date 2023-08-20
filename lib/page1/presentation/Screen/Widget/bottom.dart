@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_ui/home/presentation/component/customebutton.dart';
-import 'package:project_ui/home/presentation/component/custometext.dart';
+import 'package:project_ui/component/customebutton.dart';
+import 'package:project_ui/component/custometext.dart';
 
 class signin extends StatelessWidget {
   const signin({super.key});
