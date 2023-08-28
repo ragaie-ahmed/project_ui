@@ -12,21 +12,24 @@ class containerpage extends StatelessWidget {
           width: MediaQuery.of(context).size.width * .7,
           height: MediaQuery.of(context).size.height * .44,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-              gradient: LinearGradient(
+              borderRadius: BorderRadius.circular(20),
+              gradient: const LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomLeft,
                   colors: const [
-                const Color.fromRGBO(255, 255, 255, 1),
-                Color.fromARGB(255, 226, 246, 249),
-              ])),
+                     Color.fromRGBO(255, 255, 255, 1),
+                    Color.fromARGB(255, 226, 246, 249),
+                  ])),
         ),
-         Image.asset(
-"assets/images/OIP (2).jpg",        fit: BoxFit.fill,
-        width: MediaQuery.of(context).size.width * .5,
-        height: MediaQuery.of(context).size.height * .3,
-      ),
+        Image.asset(
+"assets/images/ram.png",          fit: BoxFit.fill,
+          width: MediaQuery.of(context).size.width * .5,
+          height: MediaQuery.of(context).size.height * .3,
+        ),
       ],
     );
   }
 }
+
+// MediaQuery.of(context).size.height
+// MediaQuery.of(context).size.width
