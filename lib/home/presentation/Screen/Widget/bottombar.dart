@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:project_ui/page1/presentation/Screen/page.dart';
 
 class bottombar extends StatelessWidget {
@@ -6,28 +7,45 @@ class bottombar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
-        Icon(Icons.home_filled),
-        Icon(Icons.search),
-       GestureDetector(
-        onTap:() {
-          
-          Navigator.push(context, MaterialPageRoute(builder: (context){
-            return page();
-          }));
-        },
-         child: Container(
-          width: MediaQuery.of(context).size.width*.15,
-          height: MediaQuery.of(context).size.height*0.06,
-          decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(50)),
-         child:  Icon(Icons.app_blocking_outlined),
-         ),
-       ),
-        Icon(Icons.macro_off),
-        Icon(Icons.person),
-      ],
-    );
+    return GNav(
+  rippleColor: Colors.grey.shade700, // tab button ripple color when pressed
+  hoverColor:  Colors.grey.shade700,// tab button hover color
+  haptic: true, // haptic feedback
+  tabBorderRadius: 15, 
+  tabActiveBorder: Border.all(color: Colors.black, width: 1), // tab button border
+  tabBorder: Border.all(color: Colors.grey, width: 1), // tab button border
+  tabShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5), blurRadius: 8)], // tab button shadow
+  curve: Curves.easeOutExpo, // tab animation curves
+  duration:const Duration(milliseconds: 900), // tab animation duration
+  gap: 8, // the tab button gap between icon and text 
+  color: Colors.grey[800], // unselected icon color
+  activeColor: Colors.purple, // selected icon and text color
+  iconSize: 24, // tab button icon size
+  tabBackgroundColor: Colors.purple.withOpacity(0.1), // selected tab background color
+  padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 5), // navigation bar padding
+  tabs: [
+    GButton(
+      onPressed: (){
+        Navigator.push(context,MaterialPageRoute(builder: (context){
+          return const page();
+        }));
+      },
+      icon: Icons.home,
+      text: 'Home',
+    ),
+ const   GButton(
+      icon: Icons.apple,
+      text: 'Likes',
+    ),
+  const  GButton(
+      icon: Icons.search,
+      text: 'Search',
+    ),
+  const  GButton(
+      icon: Icons.person,
+      text: 'Profile',
+    )
+  ]
+);
   }
 }

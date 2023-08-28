@@ -25,12 +25,22 @@ class details extends StatelessWidget {
             ),
           ],
         ),
-        customebutton(
-          containercolor: Colors.orange,
-          width: MediaQuery.of(context).size.width * .25,
-          height: MediaQuery.of(context).size.height*.04,
-          start: "Smart Picker",
-          icon: Icons.settings,
+        GestureDetector(
+          onTap: (){
+         showDialog(context:context,builder:(context) {
+           return const AlertDialog(
+            title: Text("hello"),
+            icon:Icon( Icons.headphones),
+           );
+         },);
+          },
+          child: customebutton(
+            containercolor: Colors.orange,
+            width: MediaQuery.of(context).size.width * .25,
+            height: MediaQuery.of(context).size.height*.04,
+            start: "Smart Picker",
+            icon: Icons.settings,
+          ),
         )
       ],
     );

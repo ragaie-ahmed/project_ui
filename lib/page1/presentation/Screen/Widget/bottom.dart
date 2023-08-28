@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:project_ui/component/customebutton.dart';
 import 'package:project_ui/component/custometext.dart';
 
-class signin extends StatelessWidget {
-  const signin({super.key});
+class sign extends StatelessWidget {
+  const sign({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +18,7 @@ class signin extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
             SizedBox(
-              height: 10,
+             height: MediaQuery.of(context).size.height*.1,
             ),
             custometext(
               text: "Only from " r"$10 per month",

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_ui/component/custometext.dart';
 
 class customebutton extends StatelessWidget {
   customebutton(
